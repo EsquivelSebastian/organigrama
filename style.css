@@ -61,6 +61,7 @@
     background-color: black;
     margin-top: 37px;
     
+    
 }
 .boxDirecciones p,
 .boxDirecciones h4{
@@ -77,11 +78,13 @@
     margin-top: 30px;
 }
 
-.lineCeo::before{
+.lineCEO::before{
     content: "";
     height: 5px;
-    width: 150px;
+    width: 90px;
     background-color: black;
-    margin-top: 37px;
-    flex-direction: column;
+   
+    
+    display: flex;
+    transform: rotate(90deg);
 }
