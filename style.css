@@ -1,90 +1,140 @@
-.logoContainer img{
-    height: 200px;
+.logoContainer img {
+    height: 100px;
     width: auto;
 }
-.top{
+
+.top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.boxTop{
+
+.boxTop {
     position: relative;
-    
+
 }
-.directorioContainer:after{
+
+.directorioContainer:after {
     content: "";
     width: 5px;
     height: 100px;
     background-color: black;
     margin-top: 60px;
     z-index: 1;
-    
+
 }
 
-.directorioContainer{
+.directorioContainer,
+.ceoContainer {
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 
-.directorio{
+.directorio,
+.ceo {
     border: 3px solid black;
     position: absolute;
 
 
 }
-.directorio p{
+
+.directorio p {
     padding: 3px 23px;
     color: brown;
     font-weight: bolder;
 
 }
-.directorio-1Container,
-.ceoContainer{
+
+.directorio-1Container {
     display: flex;
     justify-content: center;
     position: relative;
     top: -40px;
-    
+
 }
-.boxDirecciones{
+
+.boxDirecciones,
+.ceoContainer>div {
     border: 3px solid brown;
     width: fit-content;
     padding: 5px 5px;
 
 }
-.line{
+
+.line {
     content: "";
     height: 5px;
     width: 150px;
     background-color: black;
     margin-top: 37px;
-    
-    
+
+
 }
+
 .boxDirecciones p,
-.boxDirecciones h4{
+.boxDirecciones h4,
+.ceoContainer h4,
+.ceoContainer p {
     padding: 0%;
     text-align: center;
     margin: 0%;
 }
-.bottom{
+
+.bottom {
     display: flex;
     justify-content: space-between;
 }
 
-.ceoContainer{
-    margin-top: 30px;
+.ceo p,
+.ceo,
+.ceoContainer h4{
+    padding: 0px 10px;
+    color: azure;
+    background-color: brown;
 }
 
-.lineCEO::before{
+.ceo::before {
     content: "";
-    height: 5px;
-    width: 90px;
+    width: 5px;
+    height: 97px;
     background-color: black;
-   
-    
+    top: -120%;
+    left: 47%;
+    position: absolute;
+
+}
+.ceo::after{
+    content: "";
+    width: 5px;
+    height: 90px;
+    background-color: black;
+    left: 47%;
+    position: absolute;
+    top: 85px;
+}
+.ceo-1{
+    width: 80vw;
+    justify-content: center;
+    margin: 0 auto;
+    height: auto;
     display: flex;
-    transform: rotate(90deg);
+    flex-wrap: nowrap;
+    border: 1px solid blueviolet;
+    margin-top: 178px;
+}
+
+.ceo-1Unit{
+    border: 1px solid slategray;
+    margin: 1em 1em;
+    padding: 1em 1em;
+    text-align: center;
+
+}
+.ceo-1Container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
