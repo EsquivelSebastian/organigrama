@@ -1,0 +1,87 @@
+.logoContainer img{
+    height: 200px;
+    width: auto;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxTop{
+    position: relative;
+    
+}
+.directorioContainer:after{
+    content: "";
+    width: 5px;
+    height: 100px;
+    background-color: black;
+    margin-top: 60px;
+    z-index: 1;
+    
+}
+
+.directorioContainer{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+.directorio{
+    border: 3px solid black;
+    position: absolute;
+
+
+}
+.directorio p{
+    padding: 3px 23px;
+    color: brown;
+    font-weight: bolder;
+
+}
+.directorio-1Container,
+.ceoContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -40px;
+    
+}
+.boxDirecciones{
+    border: 3px solid brown;
+    width: fit-content;
+    padding: 5px 5px;
+
+}
+.line{
+    content: "";
+    height: 5px;
+    width: 150px;
+    background-color: black;
+    margin-top: 37px;
+    
+}
+.boxDirecciones p,
+.boxDirecciones h4{
+    padding: 0%;
+    text-align: center;
+    margin: 0%;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ceoContainer{
+    margin-top: 30px;
+}
+
+.lineCeo::before{
+    content: "";
+    height: 5px;
+    width: 150px;
+    background-color: black;
+    margin-top: 37px;
+    flex-direction: column;
+}
