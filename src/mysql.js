@@ -17,10 +17,9 @@ const connectSQL = () =>{
     })
 }
 const consultTable = () =>{
-    const sql = 'SELECT * FROM basetest.agenda';
+    const sql = 'SELECT * FROM basetest.agendaa where legajo_reporta = 13758';
     connector.query(sql, function(err, result, field){
          all = result
-         console.log(all)
     })
     return all
 }

@@ -62,87 +62,17 @@
     </div>
     <div class="ceo-1">
         <div class="ceo-1Container">
+            <% contacts.forEach(e => { %>
             <div class="ceo-1Unit">
-                <h4>Recursos Humanos</h4>
-                <p>Director de Recursos Humanos</p>
-                <p>Jorge Habif</p>
+                <h4><%= e.direccion %> </h4>
+                <p><%= e.puesto %> </p>
+                <p><%= e.apellido_nombre %> </p>
                 <div class="bottom">
                     <p>Dotacion</p>
                     <p>37</p>
                 </div>
             </div>
-            <div class="ceo-1Unit">
-                <h4>Recursos Humanos</h4>
-                <p>Director de Recursos Humanos</p>
-                <p>Jorge Habif</p>
-                <div class="bottom">
-                    <p>Dotacion</p>
-                    <p>37</p>
-                </div>
-            </div>
-            <div class="ceo-1Unit">
-                <h4>Recursos Humanos</h4>
-                <p>Director de Recursos Humanos</p>
-                <p>Jorge Habif</p>
-                <div class="bottom">
-                    <p>Dotacion</p>
-                    <p>37</p>
-                </div>
-            </div>
-            <div class="ceo-1Unit">
-                <h4>Recursos Humanos</h4>
-                <p>Director de Recursos Humanos</p>
-                <p>Jorge Habif</p>
-                <div class="bottom">
-                    <p>Dotacion</p>
-                    <p>37</p>
-                </div>
-            </div>
-            <div class="ceo-1Unit">
-                <h4>Recursos Humanos</h4>
-                <p>Director de Recursos Humanos</p>
-                <p>Jorge Habif</p>
-                <div class="bottom">
-                    <p>Dotacion</p>
-                    <p>37</p>
-                </div>
-            </div>
-            <div class="ceo-1Unit">
-                <h4>Recursos Humanos</h4>
-                <p>Director de Recursos Humanos</p>
-                <p>Jorge Habif</p>
-                <div class="bottom">
-                    <p>Dotacion</p>
-                    <p>37</p>
-                </div>
-            </div>
-            <div class="ceo-1Unit">
-                <h4>Recursos Humanos</h4>
-                <p>Director de Recursos Humanos</p>
-                <p>Jorge Habif</p>
-                <div class="bottom">
-                    <p>Dotacion</p>
-                    <p>37</p>
-                </div>
-            </div>
-            <div class="ceo-1Unit">
-                <h4>Recursos Humanos</h4>
-                <p>Director de Recursos Humanos</p>
-                <p>Jorge Habif</p>
-                <div class="bottom">
-                    <p>Dotacion</p>
-                    <p>37</p>
-                </div>
-            </div>
-            <div class="ceo-1Unit">
-                <h4>Recursos Humanos</h4>
-                <p>Director de Recursos Humanos</p>
-                <p>Jorge Habif</p>
-                <div class="bottom">
-                    <p>Dotacion</p>
-                    <p>37</p>
-                </div>
-            </div>
+            <% }) %>
         </div>
         <script src="../src/scripts.js"></script>
 </body>
