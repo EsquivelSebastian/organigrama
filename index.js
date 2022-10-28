@@ -1,7 +1,8 @@
 import express from 'express';
-import{ consultTable} from './src/mysql.js';
+import{ consultTable, hc} from './src/mysql.js';
 
 let all;
+let beta;
 
 const app = express();
 app.listen('8000', function(){
@@ -10,7 +11,14 @@ app.listen('8000', function(){
 
 app.get('/', function(req, res){
     all = consultTable();
-    res.render("index", {contacts: all})
+     beta = hc();
+    // console.log(beta[0]);
+    res.render("index", {contacts: all, cant: beta})
+})
+app.get('/beta', function(req, res){
+    beta = hc();
+    all = consultTable();
+    res.render("beta",{contacts: all, cant: beta})
 })
 
 app.set('views', './views');

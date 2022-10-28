@@ -50,12 +50,12 @@
         </div>
         <div class="ceoContainer">
             <div class="ceo">
-                <h4>Area-Name</h4>
+                <h4>Gerencia General</h4>
                 <p>CEO</p>
                 <p>Person´s name</p>
                 <div class="bottom">
                     <p>Dotacion</p>
-                    <p>XX</p>
+                    <p><%= cant.hc %> </p>
                 </div>
             </div>
         </div>
@@ -63,16 +63,19 @@
     <div class="ceo-1">
         <div class="ceo-1Container">
             <% contacts.forEach(e => { %>
+                
             <div class="ceo-1Unit">
                 <h4><%= e.direccion %> </h4>
                 <p><%= e.puesto %> </p>
                 <p><%= e.apellido_nombre %> </p>
                 <div class="bottom">
                     <p>Dotacion</p>
-                    <p>37</p>
+                    <p>XX </p>
                 </div>
             </div>
             <% }) %>
+           
+        </div>
         </div>
         <script src="../src/scripts.js"></script>
 </body>

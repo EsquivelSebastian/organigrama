@@ -1,6 +1,7 @@
 import mysql from 'mysql';
 
 let all;
+let beta;
 
 const connector = mysql.createConnection({
 
@@ -23,12 +24,17 @@ const consultTable = () =>{
     })
     return all
 }
+const hc = () =>{
+    const sql = 'SELECT count(*) as hc from agendaa';
+    connector.query(sql, function(err, result, field){
+         beta = result
+    })
+    return beta
+}
 
 
 
 
 
 
-
-
-export  {connectSQL, consultTable};
+export  {connectSQL, consultTable, hc};
