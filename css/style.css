@@ -174,7 +174,8 @@
     flex-direction: column;
     margin: 10px;
     text-align: center;
-    height: auto;
+    height: 150px;
+
     
 
 }
@@ -194,11 +195,11 @@
 
 .line-a{
     content: "";
-    height: 7.5vh;
+    height: 12vh;
     border: 1px solid black;
     position: absolute;
     margin-left: 15%;
-    margin-bottom: 50px;
+    margin-bottom: 87px;
    
 }
 .container-a::after,
