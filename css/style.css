@@ -186,7 +186,8 @@
 .container-b >p,
 .container-c >p,
 .container-d >p{
-    font-size: smaller;
+    font-size: 10px;
+    padding: 2px 2px;
 }
 
 
