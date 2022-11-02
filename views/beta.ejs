@@ -62,119 +62,53 @@
       </div>
     </div>
   </div>
-  <div class="ceo-1">
-    <div class="ceo-1Container">
-
-      <div class="colum-a">
-<!--Minima unidad fija para mantener la estructura de las lineas conectoras-->
 
 
-         
-        <div class="container-a">
-          <div class="line-a"></div>
-          <h4><%= contacts[0].direccion %> </h4>
-          <p> <%= contacts[0].puesto %></p>
-          <p> <%= contacts[0].apellido_nombre %></p>
-          <p>Data</p>
-        </div>
+  <div class="center">
 
-        <!--Pseudo elementos de lineas conectoras con la unidad fija dentro del EJS-->
-        <!--Solo en A y en C para que B y D tengan menos elementos y sea suficiente la linea de "line-aa" -->
-        
-        <!-- <div class="container-a">
-          <div class="line-aa"></div>
+    <div class="columA">
+
+      <div class="boxContainer">
+        <div class="box">
           <h4>Title</h4>
-          <p> Name</p>
-          <p>Data</p>
+          <p>Puesto</p>
+          <p>Apellido y Nombre</p>
+          <p></p>
         </div>
- -->
-        <!-- <% contacts.forEach(e => { %>
-                
-          <div class="container-a">
-            <div class="line-aa"></div>
-              <h4><%= e.direccion[0] %> </h4>
-              <p><%= e.puesto[0] %> </p>
-              <p><%= e.apellido_nombre[0] %> </p>
-              <div class="bottom">
-                  <p>Dotacion</p>
-                  <p>XX </p>
-              </div>
-          </div>
-          <% }) %>
-         -->
-
-
-         <div class="container-a">
-          <div class="line-aa"></div>
-          <h4><%= contacts[4].direccion %> </h4>
-          <p> <%= contacts[4].puesto %></p>
-          <p> <%= contacts[4].apellido_nombre %></p>
-          <p>Data</p>
-        </div>
-        <div class="container-a">
-          <div class="line-aa"></div>
-          <h4><%= contacts[5].direccion %> </h4>
-          <p> <%= contacts[5].puesto %></p>
-          <p> <%= contacts[5].apellido_nombre %></p>
-          <p>Data</p>
-        </div>
+        <div class="lineFixed"></div>
+        <div class="lineFixedII"></div>
       </div>
-
-      <div class="colum-b">
-
-        <div class="container-b">
-          <h4><%= contacts[1].direccion %> </h4>
-          <p> <%= contacts[1].puesto %></p>
-          <p> <%= contacts[1].apellido_nombre %></p>
-          <p>Data</p>
+      <div class="boxContainer">
+        <div class="box">
+          <h4>Title</h4>
+          <p>Puesto</p>
+          <p>Apellido y Nombre</p>
+          <p></p>
         </div>
-        <div class="container-b">
-          <h4><%= contacts[6].direccion %> </h4>
-          <p> <%= contacts[6].puesto %></p>
-          <p> <%= contacts[6].apellido_nombre %></p>
-          <p>Data</p>
-        </div>
-
-      </div>
-
-
-      <div class="colum-c">
-        <div class="line-a"></div>
-
-        <div class="container-c">
-          <h4><%= contacts[2].direccion %> </h4>
-          <p> <%= contacts[2].puesto %></p>
-          <p> <%= contacts[2].apellido_nombre %></p>
-          <p>Data</p>
-        </div>
-                <!--Pseudo elementos de lineas conectoras con la unidad fija dentro del EJS-->
-
-                <!-- <% contacts.forEach(e => { %>
-                
-                  <div class="container-a">
-                    <div class="line-aa"></div>
-                      <h4><%= e.direccion %> </h4>
-                      <p><%= e.puesto %> </p>
-                      <p><%= e.apellido_nombre %> </p>
-                      <div class="bottom">
-                          <p>Dotacion</p>
-                          <p>XX </p>
-                      </div>
-                  </div>
-                  <% }) %> -->
-
-      </div>
-      <div class="colum-d">
-        <div class="container-d">
-          <h4><%= contacts[3].direccion %> </h4>
-          <p> <%= contacts[3].puesto %></p>
-          <p> <%= contacts[3].apellido_nombre %></p>
-          <p>Data</p>
-        </div>
-        
+        <div class="lineFixed"></div>
+        <div class="lineFixedIII"></div>
       </div>
     </div>
+
+    <div class="columB">
+      <div class="lineFixedB"></div>
+      <div class="boxContainerB">
+        <div class="box">
+          <h4>Title</h4>
+          <p>Puesto</p>
+          <p>Apellido y Nombre</p>
+          <p></p>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="columC"></div>
+    <div class="columD"></div>
+
   </div>
+
+
   <script src="../src/scripts.js"></script>
 </body>
 

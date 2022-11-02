@@ -20,6 +20,9 @@ app.get('/beta', function(req, res){
     all = consultTable();
     res.render("beta",{contacts: all, cant: beta})
 })
+app.get('/headNreports', function(req, res){
+    res.render("headNreports");
+});
 
 app.set('views', './views');
 app.set('view engine', 'ejs');
