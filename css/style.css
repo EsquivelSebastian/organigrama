@@ -12,7 +12,6 @@
 
 .boxTop {
     position: relative;
-    background-color: bisque;
 }
 
 .directorioContainer:after {
@@ -146,9 +145,9 @@
 .columA{
     display: flex;
    flex-direction: column;
-   
-   
+   position: relative;
 }
+
 .columB{
     border-top: 2px solid black;
     
@@ -156,26 +155,44 @@
 .columC{
     border-top: 2px solid black;
 }
-.columD{
-    background-color: cadetblue;
-}
-.boxContainer{
+
+.boxContainer,
+.boxContainerFirst{
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
+    margin-bottom: 4px;
+    margin-bottom: 0;
+}
+.boxContainer{
+    position: relative;
+    margin-bottom: 0;
+}
+
+
+.connector{
+    content: "";
+    height: 200px;
+    width: 1px;
+    border: 1px solid black;
+    background-color: black;
+    margin-bottom: 0;
+}
+.xConnector{
+    content: "";
+    height: 1px;
+    width: 7px;
+    border: 1px solid black;
+    background-color: black;
+    margin-top: 4em;
+    right: 7px;
+    position: relative;
 }
 .boxContainerB{
     margin-left: 10px;
     margin-top: -2px;
 }
-.lineFixedB{
-    height: 2px;
-    width: 9px;
-    background-color: black;
-    left: 425px;
-    position: absolute;
-    top: 615px;
-}
+
 .box{
     border: 1px solid black;
     padding: 4px 4px;
@@ -184,18 +201,17 @@
     height: min-content;
     margin-top: 10px;
     margin-right: 5px;
+    flex-direction: row;
 }
-.lineFixed{
-   width: 1px;
-    background-color: black;
-   height: 80px;
+.box h4,
+.box p{
+    font-size: small;
+    margin-top: 0;
 }
-.lineFixedIII{
-    height: 80px;
-    width: 1px;
-    background-color: black;
-    left: 424px;
-    position: absolute;
-    top: 615px;
 
+
+.lineFixed{
+   width: 2px;
+    background-color: black;
+   height: 180px;
 }

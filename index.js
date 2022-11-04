@@ -9,13 +9,8 @@ app.listen('8000', function(){
     console.log("App corriendo")
 })
 
+
 app.get('/', function(req, res){
-    all = consultTable();
-     beta = hc();
-    // console.log(beta[0]);
-    res.render("index", {contacts: all, cant: beta})
-})
-app.get('/beta', function(req, res){
     beta = hc();
     all = consultTable();
     res.render("beta",{contacts: all, cant: beta})
