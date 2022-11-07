@@ -1,7 +1,11 @@
 import express from 'express';
-import{ consultTable, hc} from './src/mysql.js';
+import{ consultTableA,consultTableB,consultTableC,consultTableD, hc} from './src/mysql.js';
 
 let all;
+let columB;
+let columC;
+let columD;
+
 let beta;
 
 const app = express();
@@ -12,8 +16,11 @@ app.listen('8000', function(){
 
 app.get('/', function(req, res){
     beta = hc();
-    all = consultTable();
-    res.render("beta",{contacts: all, cant: beta})
+    all = consultTableA();
+    columB = consultTableB();
+    columC = consultTableC();
+    columD = consultTableD();
+    res.render("beta",{columnA: all, columnB: columB, columnC: columC, columnD: columD, cant: beta})
 })
 app.get('/headNreports', function(req, res){
     res.render("headNreports");
