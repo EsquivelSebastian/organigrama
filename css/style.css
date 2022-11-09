@@ -92,6 +92,7 @@
 }
 .bottom p{
     margin-top: 0;
+    margin-bottom: 0  ;
 }
 
 .ceo p,
@@ -112,7 +113,8 @@
     position: absolute;
 
 }
-.ceo::after{
+.ceo::after,
+.head::after{
     content: "";
     width: 2px;
     height: 90px;
@@ -205,9 +207,22 @@
     background-color: #9c9c9c
 }
 .box h4,
-.box p{
+.box p,
+.boxI h4,
+.boxI p{
     font-size: small;
     margin-top: 0;
+}
+.boxI{
+    border: 2px solid black;
+    padding: 4px 4px;
+    text-align: center;
+    width: 190px;
+    height: min-content;
+    margin-top: 10px;
+    margin-right: 5px;
+    flex-direction: row;
+    background-color: #9c9c9c
 }
 
 
@@ -215,4 +230,16 @@
    width: 1px;
     background-color: black;
    height: 180px;
+}
+
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.head::after{
+    top: 255px;
+    left: 50%;
+    height: 178px;
 }
