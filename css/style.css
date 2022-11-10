@@ -3,6 +3,115 @@
     width: auto;
 }
 
+.menu{
+    /* background-color: rgb(68, 47, 120); */
+   background-color: #000f92c9;
+    height: 70px;
+    display: flex;
+    justify-content:space-between ;
+    width: 100%;
+}
+.menu__container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+    width: 100%;
+   
+    
+}
+.download span{
+    font-size: 3em;
+    color: whitesmoke;
+    margin-right: 25px ;
+    margin: 20px ;
+}
+.menu__links{
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+    
+}
+.download{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding-left: 45px;
+}
+.navMenu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu__item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    color: #fff;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg) ;
+}
+.menu__item--active{
+    --transform: rotate(0);
+    --background: #5e7094;
+}
+.menu__item--show{
+    background-color: var(--background);
+}
+.menu__item:hover{
+     --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%); 
+     --transform: rotate(0) ;
+    }
+
+.menu__link{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.menu__link:hover{
+    background-color: #6d77ff;
+}
+
+.menu__item a{
+    color: #ffe5fe;
+    font-size: 18px ;
+}
+
+.menu__nesting{
+    clip-path: var(--clip);
+}
+.menu__link--inside{
+    padding: 30px 100px 30px 20px;
+}
+.menu__arrow{
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+.menu__nesting{
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: #8c6dbf;
+}
+
+.menu__burguer{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 15px;
+    display: none;
+}
+
 .top {
     display: flex;
     justify-content: space-between;
@@ -32,7 +141,6 @@
 
 
 .directorio,
-.ceo,
 .colum-a,
 .colum-b,
 .colum-c,
@@ -60,12 +168,18 @@
 
 .boxDirecciones,
 .ceoContainer>div {
-    border: 3px solid brown;
+   
     width: fit-content;
     padding: 5px 5px;
 
 }
-
+.boxDirecciones{
+    border: 2px solid black;
+    background-color: #9c9c9c;
+}
+.right{
+    background-color: white;
+}
 .line {
     content: "";
     height: 2px;
@@ -87,12 +201,15 @@
 
 .bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    margin-bottom: 0;
+    margin-top: 1em;
 }
 .bottom p{
     margin-top: 0;
     margin-bottom: 0  ;
 }
+
 
 .ceo p,
 .ceo,
@@ -101,11 +218,16 @@
     color: azure;
     background-color: brown;
 }
+.ceo{
+    border: 2px solid black;
+    position: absolute;
+    
+}
 
 .ceo::before {
     content: "";
     width: 2px;
-    height: 97px;
+    height: 120px;
     background-color: black;
     top: -120%;
     left: 50%;
@@ -116,11 +238,11 @@
 .head::after{
     content: "";
     width: 2px;
-    height: 90px;
+    height: 77px;
     background-color: black;
-    left: 47%;
+    left: 48%;
     position: absolute;
-    top: 85px;
+    top: 100px;
 }
 
 
@@ -204,7 +326,12 @@
     margin-top: 10px;
     margin-right: 5px;
     flex-direction: row;
-    background-color: #9c9c9c
+    background-color: #9c9c9c;
+    font-weight: 500;
+}
+
+.center a{
+    text-decoration: none;
 }
 .box h4,
 .box p,
@@ -213,18 +340,32 @@
     font-size: small;
     margin-top: 0;
 }
+.boxI p,
+.boxI h4{
+    margin: 3px;
+    width: 100%;
+    overflow: hidden;
+}
 .boxI{
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    justify-content: space-evenly;
     border: 2px solid black;
     padding: 4px 4px;
     text-align: center;
-    width: 190px;
-    height: min-content;
+    width: 10vw;
+    height: 10vh;
     margin-top: 10px;
     margin-right: 5px;
-    flex-direction: row;
+    
     background-color: #9c9c9c
 }
-
+.bottom p{
+margin: 0%;
+padding: 0;
+width: fit-content;
+}
 
 .lineFixed{
    width: 1px;
